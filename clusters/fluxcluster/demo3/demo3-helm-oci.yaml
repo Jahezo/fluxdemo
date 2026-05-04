@@ -1,0 +1,11 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: demo3-helm-oci
+  namespace: flux-system
+spec:
+  chartRef:
+    kind: OCIRepository
+    name: demo3-source-oci
+  interval: 1m0s
