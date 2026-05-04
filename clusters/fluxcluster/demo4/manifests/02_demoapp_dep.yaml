@@ -16,5 +16,5 @@ spec:
         app: demoapp
     spec:
       containers:
-      - image: httpd:latest
+      - image: yogeshraheja/fluxdemo:1.1.0
         name: demoapp
